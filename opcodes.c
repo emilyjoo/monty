@@ -31,9 +31,13 @@ void push(stack_t **stack, int value)
 */
 void pall(stack_t **stack, unsigned int line_number)
 {
-    (void)line_number;  // Unused parameter
+  
 
-    stack_t *current = *stack;
+    stack_t *current;
+
+    (void)line_number;  /* Unused parameter */
+
+    current = *stack;
     while (current != NULL)
     {
         printf("%d\n", current->n);
